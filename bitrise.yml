@@ -4,9 +4,9 @@ default_step_lib_source: 'https://github.com/zvercodebender/bitrise-android-demo
 project_type: android
 trigger_map:
 - push_branch: '*'
-  workflow: run_tests
+  workflow: primary
 - pull_request_source_branch: '*'
-  workflow: run_tests
+  workflow: primary
 app:
   envs:
   - PROJECT_LOCATION: .
